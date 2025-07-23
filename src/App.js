@@ -28,6 +28,10 @@ import AcademicPhilosophy from "./components/academics/AcademicPhilosophy";
 import AcademicsLondon from "./components/academics/AcademicsLondon";
 import AcademicSupport from "./components/academics/AcademicSupport";
 
+import CampusExperience from "./components/studentLife/CampusExperience";
+import StudentSupport from "./components/studentLife/StudentSupport";
+import StudentActivities from "./components/studentLife/StudentActivities";
+
 const App = () => {
   const [isRootEmpty, setIsRootEmpty] = useState(false);
 
@@ -60,17 +64,25 @@ const App = () => {
           element={<Recognisation />}
         />
         <Route path="/policies" element={<Policies />} />
-
         <Route path="/courses" element={<Courses />} />
         <Route path="/online-education" element={<OnlineEducation />} />
         <Route path="/looking-ahead" element={<LookingAhead />} />
-        <Route path="/industry-connections-and-employability" element={<IndustryConnections  />} />
-        <Route path="/academic-support-&-development" element={<AcademicSupport />} />
+        <Route
+          path="/industry-connections-and-employability"
+          element={<IndustryConnections />}
+        />
+        <Route
+          path="/academic-support-&-development"
+          element={<AcademicSupport />}
+        />
         <Route path="/academic-philosophy" element={<AcademicPhilosophy />} />
         <Route
           path="/academics-at-our-london-campus"
           element={<AcademicsLondon />}
         />
+        <Route path="/the-campus-experience" element={<CampusExperience />} />
+        <Route path="/student-support" element={<StudentSupport />} />
+        <Route path="/student-activities" element={<StudentActivities />} />
         {/* 404 Handling */}
         {/* <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} /> */}

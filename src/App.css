@@ -31,6 +31,11 @@
   color: var(--golden-color) !important;
 }
 
+.btn-outline-primary{
+  color: var(--blue-color) !important;
+  border-color: var(--blue-color) !important;
+}
+
 body {
   font-family: "Archivo", sans-serif;
   overflow-x: hidden;
@@ -1222,4 +1227,9 @@ p.fst-italic {
   .accreditations-hero {
     padding: 80px 0 !important;
   }
+}
+
+img.service-img {
+  height: 250px;
+  object-fit: cover;
 }
