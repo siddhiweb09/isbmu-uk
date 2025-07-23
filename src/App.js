@@ -28,6 +28,9 @@ import AcademicPhilosophy from "./components/academics/AcademicPhilosophy";
 import AcademicsLondon from "./components/academics/AcademicsLondon";
 import AcademicSupport from "./components/academics/AcademicSupport";
 
+import WorkForUs from "./components/contact/WorkForUs";
+import PartnershipOpportunities from "./components/contact/PartnershipOpportunities";
+
 const App = () => {
   const [isRootEmpty, setIsRootEmpty] = useState(false);
 
@@ -71,6 +74,8 @@ const App = () => {
           path="/academics-at-our-london-campus"
           element={<AcademicsLondon />}
         />
+        <Route path="/work-for-us" element={<WorkForUs />} />
+        <Route path="/partnership-opportunities" element={<PartnershipOpportunities />} />
         {/* 404 Handling */}
         {/* <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} /> */}
