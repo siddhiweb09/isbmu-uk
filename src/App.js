@@ -36,6 +36,8 @@ import IntStuVisaSupport from "./components/admission/IntStuVisaSupport";
 import TutionFees from "./components/admission/TutionFees";
 import AccessParticipation from "./components/admission/AccessParticipation";
 import StudentProtection from "./components/admission/StudentProtection";
+import WorkForUs from "./components/contact/WorkForUs";
+import PartnershipOpportunities from "./components/contact/PartnershipOpportunities";
 
 const App = () => {
   const [isRootEmpty, setIsRootEmpty] = useState(false);
@@ -97,6 +99,8 @@ const App = () => {
         <Route path="/tuition-fees" element={<TutionFees />} />
         <Route path="/access-and-participation" element={<AccessParticipation />} />
         <Route path="/student-protection" element={<StudentProtection />} />
+        <Route path="/work-for-us" element={<WorkForUs />} />
+        <Route path="/partnership-opportunities" element={<PartnershipOpportunities />} />
         {/* 404 Handling */}
         {/* <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} /> */}
