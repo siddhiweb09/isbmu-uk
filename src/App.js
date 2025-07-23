@@ -32,6 +32,9 @@ import CampusExperience from "./components/studentLife/CampusExperience";
 import StudentSupport from "./components/studentLife/StudentSupport";
 import StudentActivities from "./components/studentLife/StudentActivities";
 
+import WorkForUs from "./components/contact/WorkForUs";
+import PartnershipOpportunities from "./components/contact/PartnershipOpportunities";
+
 const App = () => {
   const [isRootEmpty, setIsRootEmpty] = useState(false);
 
@@ -83,6 +86,9 @@ const App = () => {
         <Route path="/the-campus-experience" element={<CampusExperience />} />
         <Route path="/student-support" element={<StudentSupport />} />
         <Route path="/student-activities" element={<StudentActivities />} />
+        
+        <Route path="/work-for-us" element={<WorkForUs />} />
+        <Route path="/partnership-opportunities" element={<PartnershipOpportunities />} />
         {/* 404 Handling */}
         {/* <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} /> */}
