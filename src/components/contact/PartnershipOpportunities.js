@@ -93,6 +93,44 @@ const PartnershipOpportunities = () => {
                             </Card>
                         </Col>
                     </Row>
+
+                    <Row className="justify-content-center mb-5">
+                        <Col lg={10}>
+                            <Card className="border-0 shadow-sm">
+                                <Card.Body className="p-0 pt-3">
+                                    <p>
+                                        We bring a strong international perspective to our work, with a particular focus on UK–India higher education collaboration and global graduate mobility. We are building a network of forward-thinking academic partners committed to shaping a more equitable and globally connected higher education landscape.
+                                    </p>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+
+                    <Row className="justify-content-center my-5">
+                        <Col lg={10}>
+                            <div className="cta-card bg-blue p-5 rounded-4 text-center shadow-sm">
+                                <h3 className="text-white mb-4">Let's Make Higher Education More Accessible, Together!</h3>
+                                <p className="mb-4 text-white">
+                                    By collaborating with us, your institution can expand its global footprint, enhance student diversity,
+                                    and drive meaningful impact in higher education. Let's work together to create an inclusive academic
+                                    environment that transforms lives.
+                                </p>
+                                <div className="contact-box bg-white bg-opacity-10 rounded-3 p-4 mx-auto" style={{ maxWidth: '500px' }}>
+                                    <p className="text-white fw-semibold mb-2">Let’s connect and explore the possibilities!</p>
+                                    <p className="mb-0 text-white">
+                                        To start a conversation, contact us at:<br />
+                                        <a
+                                            href="mailto:ian.whitehead@isbmuniversity.edu.in"
+                                            className="text-purple fw-bold text-decoration-none"
+                                        >
+                                            ian.whitehead@isbmuniversity.edu.in
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+
                 </div>
             </section>
             <Footer />
