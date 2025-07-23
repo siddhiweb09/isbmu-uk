@@ -31,7 +31,7 @@
   color: var(--golden-color) !important;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
   color: var(--blue-color) !important;
   border-color: var(--blue-color) !important;
 }
@@ -1232,4 +1232,20 @@ p.fst-italic {
 img.service-img {
   height: 250px;
   object-fit: cover;
+}
+
+.travel-ops .nav-link {
+  color: #fff !important;
+  border-bottom: 2px solid #FFF;
+}
+
+.travel-ops .nav-link.active {
+  background: #FFF !important;
+  color: var(--purple-color) !important;
+  font-weight: 600;
+  font-size: 1.1rem !important;
+}
+
+.travel-plane img.card-img-top {
+  height: 150px;
 }
