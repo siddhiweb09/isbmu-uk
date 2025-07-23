@@ -34,32 +34,7 @@ const Research = () => {
         </div>
       </section>
 
-      <section className="ptb-50">
-        <div className="container">
-          <Row className="m-0">
-            <div className="col-md-6 mt-5 d-flex justify-content-center">
-              <div className="image-wrapper position-relative">
-                <div className="image-bg h-75"></div>
-                <img
-                  src={researchImage}
-                  className="img-fluid rounded placement-image position-relative"
-                  alt="Placement Classroom"
-                />
-              </div>
-            </div>
-            <Col lg={6}>
-              <h2 className="section-title-start modern-title">
-                Driving Impact Through Inclusive and Global Education Research
-              </h2>
-              <p>
-                At the heart of our research mission is a commitment to
-                advancing equity, inclusion, and global collaboration in higher
-                education.
-              </p>
-            </Col>
-          </Row>
-        </div>
-      </section>
+      
 
       <section className="py-5">
         <Container>
@@ -67,6 +42,15 @@ const Research = () => {
             <Col lg={12}>
               <Card className="border-0 shadow-sm">
                 <Card.Body className="p-4 p-md-5">
+                  <h2 className="section-title-start modern-title">
+                    Driving Impact Through Inclusive and Global Education
+                    Research
+                  </h2>
+                  <p>
+                    At the heart of our research mission is a commitment to
+                    advancing equity, inclusion, and global collaboration in
+                    higher education.
+                  </p>
                   <div className="mb-4">
                     <p>
                       As we grow and develop in the UK, our research initiatives
@@ -116,7 +100,9 @@ const Research = () => {
         <Container>
           <Row className="justify-content-center mb-4">
             <Col lg={8} className="text-center">
-              <h2 className="modern-title text-center section-title">Our Research Focus</h2>
+              <h2 className="modern-title text-center section-title">
+                Our Research Focus
+              </h2>
             </Col>
           </Row>
           <div class="row mt-5">
