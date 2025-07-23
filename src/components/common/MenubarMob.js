@@ -119,16 +119,16 @@ const MenubarMob = () => {
     Admissions: [
       {
         label: "Admission",
-        link: "/",
+        link: "/admission",
       },
       {
         label: "How to apply",
-        link: "/",
+        link: "/how-to-apply",
       },
-      { label: "International Students", link: "/" },
-      { label: "Tution Fees", link: "/" },
-      { label: "Access and Participations", link: "/" },
-      { label: "Srudent Protection", link: "/" },
+      { label: "International Students", link: "/international-students-and-visa-support" },
+      { label: "Tution Fees", link: "/tution-fees" },
+      { label: "Access and Participations", link: "/access-and-participation" },
+      { label: "Student Protection", link: "/student-protection" },
       // {
       //   label: "Payment Procedure Guidelines",
       //   link: "/payment-procedure-guidelines",

@@ -31,6 +31,11 @@
   color: var(--golden-color) !important;
 }
 
+.btn-outline-primary {
+  color: var(--blue-color) !important;
+  border-color: var(--blue-color) !important;
+}
+
 body {
   font-family: "Archivo", sans-serif;
   overflow-x: hidden;
@@ -1224,7 +1229,27 @@ p.fst-italic {
   }
 }
 
-/* CTA Card Styles */
+img.service-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.travel-ops .nav-link {
+  color: #fff !important;
+  border-bottom: 2px solid #FFF;
+}
+
+.travel-ops .nav-link.active {
+  background: #FFF !important;
+  color: var(--purple-color) !important;
+  font-weight: 600;
+  font-size: 1.1rem !important;
+}
+
+.travel-plane img.card-img-top {
+  height: 150px;
+}
+
 .cta-card {
     border: 1px solid rgba(28, 36, 71, 0.1);
     transition: all 0.3s ease;
