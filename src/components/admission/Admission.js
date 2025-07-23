@@ -34,8 +34,8 @@ const Admission = () => {
         </div>
       </section>
 
-       <section className="py-5">
-        <Container>
+       <section className="ptb-50">
+        <div className="container-xxl">
           <Row className="justify-content-center align-items-center g-5 mb-5">
            
             <Col lg={12}>
@@ -62,12 +62,12 @@ const Admission = () => {
               </Card>
             </Col>
           </Row>
-        </Container>
+        </div>
       </section>
 
       {/* Next Steps */}
-      <section className="py-5 bg-purple text-white">
-        <Container>
+      <section className="ptb-50 bg-purple text-white">
+        <div className="container-xxl">
           <Row className="justify-content-center text-center">
             <Col lg={8}>
               <h2 className="fw-bold mb-4">Ready to Begin Your Journey?</h2>
@@ -79,7 +79,7 @@ const Admission = () => {
               </Link>
             </Col>
           </Row>
-        </Container>
+        </div>
       </section>
 
       

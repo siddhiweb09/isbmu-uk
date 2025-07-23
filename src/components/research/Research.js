@@ -36,8 +36,8 @@ const Research = () => {
 
       
 
-      <section className="py-5">
-        <Container>
+      <section className="ptb-50">
+        <div className="container-xxl">
           <Row className="justify-content-center">
             <Col lg={12}>
               <Card className="border-0 shadow-sm">
@@ -92,12 +92,12 @@ const Research = () => {
               </Card>
             </Col>
           </Row>
-        </Container>
+        </div>
       </section>
 
       {/* Research Focus Areas */}
-      <section className="py-5 bg-light">
-        <Container>
+      <section className="ptb-50 bg-light">
+       <div className="container-xxl">
           <Row className="justify-content-center mb-4">
             <Col lg={8} className="text-center">
               <h2 className="modern-title text-center section-title">
@@ -134,7 +134,7 @@ const Research = () => {
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
       <Footer />
     </React.Fragment>

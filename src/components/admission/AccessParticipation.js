@@ -39,8 +39,8 @@ const AccessParticipation = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-5">
-        <Container>
+      <section className="ptb-50">
+        <div className="container-xxl">
           <Row className="justify-content-center g-4">
             <Col lg={12}>
               <Card className="border-0 shadow-sm">
@@ -97,7 +97,7 @@ const AccessParticipation = () => {
 
             
           </Row>
-        </Container>
+        </div>
       </section>
 
       <Footer />

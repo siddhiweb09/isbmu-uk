@@ -35,8 +35,8 @@ const HowToApply = () => {
         </div>
       </section>
 
-      <section className="py-5">
-        <Container>
+      <section className="ptb-50">
+        <div className="container-xxl">
           <Row className="justify-content-center g-4">
             <Col lg={12}>
               <Card className="border-0 shadow">
@@ -96,7 +96,7 @@ const HowToApply = () => {
               </Card>
             </Col>
           </Row>
-        </Container>
+        </div>
       </section>
 
       <Footer />
