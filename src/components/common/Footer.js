@@ -70,22 +70,22 @@ const Footer = () => {
               <h4 className="footer-heading mt-4">Admission</h4>
               <ul className="footer-links">
                 <li>
-                  <Link to="/">Admission</Link>
+                  <Link to="/admission">Admission</Link>
                 </li>
                 <li>
-                  <Link to="/">How to Apply</Link>
+                  <Link to="/how-to-apply">How to Apply</Link>
                 </li>
                 <li>
-                  <Link to="/">International Students</Link>
+                  <Link to="/international-students-and-visa-support">International Students</Link>
                 </li>
                 <li>
-                  <Link to="/">Tution Fees</Link>
+                  <Link to="/tuition-fees">Tution Fees</Link>
                 </li>
                 <li>
-                  <Link to="/">Access and Participations</Link>
+                  <Link to="/access-and-participation">Access and Participations</Link>
                 </li>
                 <li>
-                  <Link to="/">Student Protection</Link>
+                  <Link to="/student-protection">Student Protection</Link>
                 </li>
               </ul>
             </Col>
