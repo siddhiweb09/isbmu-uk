@@ -112,9 +112,9 @@ const Menubar = () => {
     ],
     Admissions: [
       { label: "How to Apply", link: "/how-to-apply" },
-      { label: "International Students & Visa Support", link: "/international-students-&-visa-support" },
+      { label: "International Students & Visa Support", link: "/international-students-and-visa-support" },
       { label: "Tuition Fees", link: "/tuition-fees" },
-      { label: "Access & Participation", link: "/access-&-participation" },
+      { label: "Access & Participation", link: "/access-and-participation" },
       { label: "Student Protection", link: "/student-protection" },
     ],
     "Student Life": [

@@ -32,6 +32,15 @@ import CampusExperience from "./components/studentLife/CampusExperience";
 import StudentSupport from "./components/studentLife/StudentSupport";
 import StudentActivities from "./components/studentLife/StudentActivities";
 
+import Research from "./components/research/Research";
+
+import Admission from "./components/admission/Admission";
+import HowToApply from "./components/admission/HowToApply";
+import IntStuVisaSupport from "./components/admission/IntStuVisaSupport";
+import TutionFees from "./components/admission/TutionFees";
+import AccessParticipation from "./components/admission/AccessParticipation";
+import StudentProtection from "./components/admission/StudentProtection";
+
 import HowToFindUs from "./components/contact/HowToFindUs";
 import WorkForUs from "./components/contact/WorkForUs";
 import PartnershipOpportunities from "./components/contact/PartnershipOpportunities";
@@ -89,6 +98,17 @@ const App = () => {
         <Route path="/student-activities" element={<StudentActivities />} />
 
         <Route path="/how-to-find-us" element={<HowToFindUs />} />
+
+        <Route path="/research" element={<Research />} />
+        <Route path="/admission" element={<Admission />} />
+        <Route path="/how-to-apply" element={<HowToApply />} />
+        <Route
+          path="/international-students-and-visa-support"
+          element={<IntStuVisaSupport />}
+        />
+        <Route path="/tuition-fees" element={<TutionFees />} />
+        <Route path="/access-and-participation" element={<AccessParticipation />} />
+        <Route path="/student-protection" element={<StudentProtection />} />
         <Route path="/work-for-us" element={<WorkForUs />} />
         <Route
           path="/partnership-opportunities"
