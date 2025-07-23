@@ -1,0 +1,126 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .card-icon i {
+    font-size: 3rem !important;
+  }
+
+  p.card-text.mb-0 {
+    width: 80%;
+  }
+
+  .dropdown-item {
+    color: #000 !important;
+  }
+
+  img.logo {
+    height: 60px;
+  }
+
+  .double-curved-container {
+    flex-direction: column;
+  }
+
+  .curve-images {
+    transform: none !important;
+  }
+
+  .circle-img {
+    transform: none !important;
+  }
+
+  .curve-images.right-curve {
+    margin-left: 0px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .faq-content {
+    margin-bottom: 30px;
+  }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Extra small devices */
+@media only screen and (max-width: 768px) {
+
+  .reason-container .col:nth-child(3),
+  .reason-container .col:nth-child(4) {
+    border-bottom: 1px solid #CCC;
+  }
+
+  .reason-container .col:nth-child(3) {
+    border-right: 1px solid #CCC;
+  }
+
+  .reason-container .col:nth-child(2) {
+    border-right: none;
+  }
+
+  .reason-container .col:nth-child(5) {
+    border-left: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  img.reclogo {
+    height: 40px !important;
+    align-self: center;
+  }
+
+  .logo {
+    height: 60px !important;
+  }
+
+  .menu_header {
+    gap: 0;
+    max-width: 800px;
+    font-size: 0.9rem;
+  }
+
+  .upper-menu li,
+  ul.menu_header li {
+    padding: 0 0.3rem;
+  }
+
+  .upper-menu a {
+    font-size: 0.75rem !important;
+  }
+
+}
+
+@media only screen and (max-width: 1395px) {
+  .logobar {
+    flex-direction: column !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  img.reclogo {
+    height: 50px !important;
+  }
+
+  .logo {
+    height: 90px !important;
+  }
+
+  .menu_header {
+    max-width: 900px;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1199.98px) {
+
+  .curve-images.right-curve {
+    margin-left: -230px;
+  }
+}
