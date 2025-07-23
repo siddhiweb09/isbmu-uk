@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import logo from "../../Images/logo/isbm-university.jpg";
+import logo from "../../Images/logo/isbm-university.png";
 
 const MenubarMob = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,132 +72,66 @@ const MenubarMob = () => {
   };
 
   const handleMouseLeave = () => {};
+
   // Dropdown content for each menu item
- const dropdownContent = {
+  const dropdownContent = {
     "About Us": [
-      { label: "About", link: "/about-us" },
+      { label: "About Us", link: "/about-us" },
+      { label: "History", link: "/history" },
       {
-        label: "Vision Mission",
-        link: "/vision-mission",
+        label: "Mission, Vision and Values",
+        link: "/mission-vision-values",
       },
       { label: "Governing Board", link: "/governing-board" },
-      { label: "executive Board", link: "/executive-board" },
-      { label: "Accredition", link: "/accreditations-endorsements" },
+      { label: "Executive Board", link: "/executive-board" },
+      {
+        label: "Accredition and Endorsements",
+        link: "/accreditations-endorsements",
+      },
       { label: "Policies", link: "/policies" },
-      // {
-      //   label: "Code of Conduct (Management)",
-      //   link: "/code-of-conduct-management",
-      // },
-      // { label: "Code of Conduct (Student)", link: "/code-of-conduct-student" },
-      // {
-      //   label: "Code of Conduct (Boardes of Hostel)",
-      //   link: "/code-of-conduct-boardes-of-hostel",
-      // },
     ],
     Academics: [
-      { label: "courses", link: "/courses" },
+      { label: "Courses", link: "/courses" },
       { label: "Online Education", link: "/online-education" },
-      { label: "Academic Overview", link: "/academic-overview" },
+      { label: "Looking Ahead", link: "/looking-ahead" },
+      { label: "Academic Philosophy", link: "/academic-philosophy" },
       {
-        label: "Academic Philosophy",
-        link: "/academic-philosophy",
+        label: "Academics at Our London Campus",
+        link: "/academics-at-our-london-campus",
       },
-      // { label: "Academics at Our London Campus ", link: "/" },
-      // { label: "Acadmic Support", link: "/" },
-      { label: "Industry Connection", link: "/" },
-    ],
-    Research: [
-      { label: "Research", link: "/" },
-      // ...schools.map((school, index) => ({
-      //   key: index,
-      //   label: school.title,
-      //   link: `/${school.name.toLowerCase().replace(/\s+/g, "-")}`,
-      // })),
-      // You can add additional items after the mapped schools if needed
-      // { label: "All Programmes", link: "/programmes" },
+      {
+        label: "Academic Support & Development",
+        link: "/academic-support-&-development",
+      },
+      {
+        label: "Industry Connections and Employability",
+        link: "/industry-connections-and-employability",
+      },
     ],
     Admissions: [
+      { label: "How to Apply", link: "/how-to-apply" },
       {
-        label: "Admission",
-        link: "/admission",
+        label: "International Students & Visa Support",
+        link: "/international-students-and-visa-support",
       },
-      {
-        label: "How to apply",
-        link: "/how-to-apply",
-      },
-      { label: "International Students", link: "/international-students-and-visa-support" },
-      { label: "Tution Fees", link: "/tution-fees" },
-      { label: "Access and Participations", link: "/access-and-participation" },
+      { label: "Tuition Fees", link: "/tuition-fees" },
+      { label: "Access & Participation", link: "/access-and-participation" },
       { label: "Student Protection", link: "/student-protection" },
-      // {
-      //   label: "Payment Procedure Guidelines",
-      //   link: "/payment-procedure-guidelines",
-      // },
-      // {
-      //   label: "Admission Procedure Guidelines",
-      //   link: "/admission-procedure-guidelines",
-      // },
-      // { label: "Admission Helpdesk", link: "/admission-help-desk" },
     ],
     "Student Life": [
-      { label: "Campus Experience", link: "/" },
-      { label: "Student Support", link: "/" },
-      { label: "Student Activities", link: "/" },
-      // { label: "Download", link: "/download-form" },
-      // { label: "Alumni Portal", link: "https://isbmalumni.com/" },
-      // { label: "Voter Portal", link: "https://voterportal.eci.gov.in/" },
-      // { label: "Anti Ragging Committee", link: "/anti-ragging-committee" },
-      // { label: "Anti-Ragging Squad", link: "/anti-ragging-squad" },
-      // {
-      //   label: "Scheduled Caste and Scheduled Tribe Committee",
-      //   link: "/sc-and-st-committee",
-      // },
-      // { label: "Other Backward Class Committee", link: "/obc-committee" },
-      // {
-      //   label: "Students' Grievance Redressal Committee",
-      //   link: "/student-grievance-committee",
-      // },
-      // { label: "Internal Complaints Committee", link: "/icc-committee" },
-      // { label: "Cultural Committee", link: "/cultural-committee" },
-      // { label: "Student Council", link: "/student-council" },
-      // { label: "Student ERP", link: "https://isbmuniversity.online/" }
+      { label: "The Campus Experience", link: "/the-campus-experience" },
+      { label: "Student Support", link: "/student-support" },
+      { label: "Student Activities", link: "/student-activities" },
     ],
-    ContactUs: [
-      { label: "How to Find", link: "/" },
-      { label: "Partnership Opportunities", link: "/" },
-      // { label: "Global Readiness", link: "/global-readiness" },
-      // { label: "Recruiters", link: "/recruiters" },
-      // {
-      //   label: "Campus Recruitment and Interview Training",
-      //   link: "/campus-recruitment-interview-training",
-      // },
-      // { label: "Work at ISBM University", link: "/work-at-isbmu" },
+    "Contact Us": [
+      { label: "How To Find Us", link: "/how-to-find-us" },
+      {
+        label: "Partnership Opportunities",
+        link: "/partnership-opportunities",
+      },
+      { label: "Work for Us", link: "/work-for-us" },
     ],
-    WorkForUs: [
-      { label: "Work For Us", link: "/" },
-      // { label: "Library", link: "/library" },
-      // { label: "Laboratory", link: "/laboratory" },
-      // { label: "Campus Infrastructure", link: "/campus-infrastructure" },
-      // { label: "Sports Facilities", link: "/sports-facilities" },
-      // { label: "Extra Curricular", link: "/extra-curricular" },
-      // {
-      //   label: "Digitized Learning System",
-      //   link: "/digitized-learning-system",
-      // },
-      // { label: "Bus Routes And Schedules", link: "/bus-routes-and-schedules" },
-      // { label: "Bus Transportation Fees", link: "/bus-transportation-fees" },
-      // { label: "Bus Transportation", link: "/bus-transportation" },
-      // { label: "Hostel", link: "/hostel" },
-    ],
-    // International: [
-    //   {
-    //     label: "International Partnerships",
-    //     link: "/international-partnerships",
-    //   },
-    //   { label: "International Students", link: "/international-students" },
-    // ],
   };
-
 
   const academicsCarousel = {
     dots: false,
@@ -267,7 +201,7 @@ const MenubarMob = () => {
                 About Us
               </a>
               <ul className="dropdown-menu">
-                {dropdownContent["AboutUs"].map((subItem, subIndex) => (
+                {dropdownContent["About Us"].map((subItem, subIndex) => (
                   <li>
                     <a
                       key={subIndex}
@@ -304,29 +238,10 @@ const MenubarMob = () => {
                 ))}
               </ul>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li className="nav-item">
+              <a href="/research" className="nav-link">
                 Research
               </a>
-              <ul className="dropdown-menu">
-                {dropdownContent["Research"].map((subItem, subIndex) => (
-                  <li>
-                    <a
-                      key={subIndex}
-                      className="dropdown-item"
-                      href={subItem.link}
-                    >
-                      {subItem.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -363,33 +278,7 @@ const MenubarMob = () => {
                 Student Life
               </a>
               <ul className="dropdown-menu">
-                {dropdownContent["StudentLife"].map(
-                  (subItem, subIndex) => (
-                    <li>
-                      <a
-                        key={subIndex}
-                        className="dropdown-item"
-                        href={subItem.link}
-                      >
-                        {subItem.label}
-                      </a>
-                    </li>
-                  )
-                )}
-              </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                ContactUs
-              </a>
-              <ul className="dropdown-menu">
-                {dropdownContent["ContactUs"].map((subItem, subIndex) => (
+                {dropdownContent["Student Life"].map((subItem, subIndex) => (
                   <li>
                     <a
                       key={subIndex}
@@ -410,10 +299,10 @@ const MenubarMob = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Work For Us
+                Contact Us
               </a>
               <ul className="dropdown-menu">
-                {dropdownContent["WorkForUs"].map((subItem, subIndex) => (
+                {dropdownContent["Contact Us"].map((subItem, subIndex) => (
                   <li>
                     <a
                       key={subIndex}
@@ -426,30 +315,6 @@ const MenubarMob = () => {
                 ))}
               </ul>
             </li>
-            {/* <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                International
-              </a>
-              <ul className="dropdown-menu">
-                {dropdownContent["International"].map((subItem, subIndex) => (
-                  <li>
-                    <a
-                      key={subIndex}
-                      className="dropdown-item"
-                      href={subItem.link}
-                    >
-                      {subItem.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </li> */}
           </ul>
         </div>
       </div>

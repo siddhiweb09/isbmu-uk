@@ -35,7 +35,7 @@ const AboutUs = () => {
         </div>
       </div> */}
 
-      <section class="about-section">
+      <section class="about-section ptb-50">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
@@ -90,10 +90,10 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="ptb-50">
+      <section className="pb-50">
         <div className="container">
           <Row className="m-0">
-            <div className="col-md-6 mt-5 d-flex justify-content-center">
+            <div className="col-md-6 d-flex justify-content-end flex-column">
               <div className="image-wrapper position-relative">
                 <div className="image-bg h-75"></div>
                 <img

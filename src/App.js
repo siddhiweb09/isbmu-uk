@@ -45,6 +45,9 @@ import HowToFindUs from "./components/contact/HowToFindUs";
 import WorkForUs from "./components/contact/WorkForUs";
 import PartnershipOpportunities from "./components/contact/PartnershipOpportunities";
 
+import NotFoundPage from "./NotFoundPage"
+import ErrorBoundary from "./ErrorBoundary";
+
 const App = () => {
   const [isRootEmpty, setIsRootEmpty] = useState(false);
 
@@ -61,64 +64,67 @@ const App = () => {
 
   return (
     <Router>
-      {/* <ErrorBoundary> */}
-      <Routes>
-        {/* Default route */}
-        <Route path="/" element={<Home />} />
-        {/* Aliases for home */}
-        <Route path="/home" element={<Navigate to="/" replace />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/mission-vision-values" element={<VisionMission />} />
-        <Route path="/governing-board" element={<GoverningBoard />} />
-        <Route path="/executive-board" element={<ExecutiveBoard />} />
-        <Route
-          path="/accreditations-endorsements"
-          element={<Recognisation />}
-        />
-        <Route path="/policies" element={<Policies />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/online-education" element={<OnlineEducation />} />
-        <Route path="/looking-ahead" element={<LookingAhead />} />
-        <Route
-          path="/industry-connections-and-employability"
-          element={<IndustryConnections />}
-        />
-        <Route
-          path="/academic-support-&-development"
-          element={<AcademicSupport />}
-        />
-        <Route path="/academic-philosophy" element={<AcademicPhilosophy />} />
-        <Route
-          path="/academics-at-our-london-campus"
-          element={<AcademicsLondon />}
-        />
-        <Route path="/the-campus-experience" element={<CampusExperience />} />
-        <Route path="/student-support" element={<StudentSupport />} />
-        <Route path="/student-activities" element={<StudentActivities />} />
+      <ErrorBoundary>
+        <Routes>
+          {/* Default route */}
+          <Route path="/" element={<Home />} />
+          {/* Aliases for home */}
+          <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/mission-vision-values" element={<VisionMission />} />
+          <Route path="/governing-board" element={<GoverningBoard />} />
+          <Route path="/executive-board" element={<ExecutiveBoard />} />
+          <Route
+            path="/accreditations-endorsements"
+            element={<Recognisation />}
+          />
+          <Route path="/policies" element={<Policies />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/online-education" element={<OnlineEducation />} />
+          <Route path="/looking-ahead" element={<LookingAhead />} />
+          <Route
+            path="/industry-connections-and-employability"
+            element={<IndustryConnections />}
+          />
+          <Route
+            path="/academic-support-&-development"
+            element={<AcademicSupport />}
+          />
+          <Route path="/academic-philosophy" element={<AcademicPhilosophy />} />
+          <Route
+            path="/academics-at-our-london-campus"
+            element={<AcademicsLondon />}
+          />
+          <Route path="/the-campus-experience" element={<CampusExperience />} />
+          <Route path="/student-support" element={<StudentSupport />} />
+          <Route path="/student-activities" element={<StudentActivities />} />
 
-        <Route path="/how-to-find-us" element={<HowToFindUs />} />
+          <Route path="/how-to-find-us" element={<HowToFindUs />} />
 
-        <Route path="/research" element={<Research />} />
-        <Route path="/admission" element={<Admission />} />
-        <Route path="/how-to-apply" element={<HowToApply />} />
-        <Route
-          path="/international-students-and-visa-support"
-          element={<IntStuVisaSupport />}
-        />
-        <Route path="/tuition-fees" element={<TutionFees />} />
-        <Route path="/access-and-participation" element={<AccessParticipation />} />
-        <Route path="/student-protection" element={<StudentProtection />} />
-        <Route path="/work-for-us" element={<WorkForUs />} />
-        <Route
-          path="/partnership-opportunities"
-          element={<PartnershipOpportunities />}
-        />
-        {/* 404 Handling */}
-        {/* <Route path="/404" element={<NotFoundPage />} />
-          <Route path="*" element={<Navigate to="/404" replace />} /> */}
-      </Routes>
-      {/* </ErrorBoundary> */}
+          <Route path="/research" element={<Research />} />
+          <Route path="/admission" element={<Admission />} />
+          <Route path="/how-to-apply" element={<HowToApply />} />
+          <Route
+            path="/international-students-and-visa-support"
+            element={<IntStuVisaSupport />}
+          />
+          <Route path="/tuition-fees" element={<TutionFees />} />
+          <Route
+            path="/access-and-participation"
+            element={<AccessParticipation />}
+          />
+          <Route path="/student-protection" element={<StudentProtection />} />
+          <Route path="/work-for-us" element={<WorkForUs />} />
+          <Route
+            path="/partnership-opportunities"
+            element={<PartnershipOpportunities />}
+          />
+          {/* 404 Handling */}
+          <Route path="/404" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
+        </Routes>
+      </ErrorBoundary>
     </Router>
   );
 };

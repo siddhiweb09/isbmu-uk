@@ -8,7 +8,7 @@ import twitter from "../../Images/icons/twitter.png";
 import instagram from "../../Images/icons/instagram.png";
 import linkedin from "../../Images/icons/linkedin.png";
 import youtube from "../../Images/icons/youtube.png";
-import logoWhite from "../../Images/logo/ISBMU LONDON WHITE LOGO.jpg";
+import logoWhite from "../../Images/logo/ISBMU LONDON WHITE LOGO.png";
 import EnquiryNow from "./EnquiryNow";
 
 const Footer = () => {

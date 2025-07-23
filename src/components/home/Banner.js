@@ -48,9 +48,8 @@ const Banner = () => {
       <Menubar />
       <div className="hero-banner home-banner">
         <div className="container banner-content">
-          <h1>
-            Start your <span>career</span> & pursue your <span>passion </span>
-          </h1>
+          <h6>Knowledge Meets Innovation</h6>
+          <h1>Begin your learning <br></br>journey with <br></br><span>ISBM university</span></h1>
         </div>
       </div>
     </>

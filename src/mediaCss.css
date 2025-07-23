@@ -41,7 +41,37 @@
     margin-bottom: 30px;
   }
 
+  .banner-content h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
 
+  .about-images {
+    display: none;
+  }
+  .recInfo {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .recDetails {
+    padding: 0 !important;
+  }
+
+  ul.dropdown-menu {
+    background: var(--blue-color);
+    width: 95%;
+    color: #fff;
+  }
+
+  ul.dropdown-menu li {
+    padding: 0 0.5rem;
+  }
+
+  a.dropdown-item {
+    color: #fff !important;
+    border-bottom: 1px solid #FFF;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
