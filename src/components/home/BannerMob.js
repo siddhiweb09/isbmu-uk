@@ -3,7 +3,7 @@ import axios from "axios";
 import Slider from "react-slick";
 
 import { Row } from "react-bootstrap";
-import logo from "../../Images/logo/isbm-university.png";
+import logo from "../../Images/logo/isbm-university.jpg";
 import { Carousel } from "react-bootstrap";
 import MenubarMob from "../common/MenubarMob";
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import logo from "../../Images/logo/isbm-university.png";
+import logo from "../../Images/logo/isbm-university.jpg";
 
 const MenubarMob = () => {
   const [isOpen, setIsOpen] = useState(false);

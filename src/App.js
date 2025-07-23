@@ -56,7 +56,7 @@ const App = () => {
   }, []);
 
   if (isRootEmpty) {
-    return <Navigate to="/dev-version/404" replace />;
+    return <Navigate to="/404" replace />;
   }
 
   return (
@@ -64,59 +64,59 @@ const App = () => {
       {/* <ErrorBoundary> */}
       <Routes>
         {/* Default route */}
-        <Route path="/dev-version/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         {/* Aliases for home */}
-        <Route path="/dev-version/home" element={<Navigate to="/dev-version/" replace />} />
-        <Route path="/dev-version/about-us" element={<AboutUs />} />
-        <Route path="/dev-version/history" element={<History />} />
-        <Route path="/dev-version/mission-vision-values" element={<VisionMission />} />
-        <Route path="/dev-version/governing-board" element={<GoverningBoard />} />
-        <Route path="/dev-version/executive-board" element={<ExecutiveBoard />} />
+        <Route path="/home" element={<Navigate to="/" replace />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/mission-vision-values" element={<VisionMission />} />
+        <Route path="/governing-board" element={<GoverningBoard />} />
+        <Route path="/executive-board" element={<ExecutiveBoard />} />
         <Route
-          path="/dev-version/accreditations-endorsements"
+          path="/accreditations-endorsements"
           element={<Recognisation />}
         />
-        <Route path="/dev-version/policies" element={<Policies />} />
-        <Route path="/dev-version/courses" element={<Courses />} />
-        <Route path="/dev-version/online-education" element={<OnlineEducation />} />
-        <Route path="/dev-version/looking-ahead" element={<LookingAhead />} />
+        <Route path="/policies" element={<Policies />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/online-education" element={<OnlineEducation />} />
+        <Route path="/looking-ahead" element={<LookingAhead />} />
         <Route
-          path="/dev-version/industry-connections-and-employability"
+          path="/industry-connections-and-employability"
           element={<IndustryConnections />}
         />
         <Route
-          path="/dev-version/academic-support-&-development"
+          path="/academic-support-&-development"
           element={<AcademicSupport />}
         />
-        <Route path="/dev-version/academic-philosophy" element={<AcademicPhilosophy />} />
+        <Route path="/academic-philosophy" element={<AcademicPhilosophy />} />
         <Route
-          path="/dev-version/academics-at-our-london-campus"
+          path="/academics-at-our-london-campus"
           element={<AcademicsLondon />}
         />
-        <Route path="/dev-version/the-campus-experience" element={<CampusExperience />} />
-        <Route path="/dev-version/student-support" element={<StudentSupport />} />
-        <Route path="/dev-version/student-activities" element={<StudentActivities />} />
+        <Route path="/the-campus-experience" element={<CampusExperience />} />
+        <Route path="/student-support" element={<StudentSupport />} />
+        <Route path="/student-activities" element={<StudentActivities />} />
 
-        <Route path="/dev-version/how-to-find-us" element={<HowToFindUs />} />
+        <Route path="/how-to-find-us" element={<HowToFindUs />} />
 
-        <Route path="/dev-version/research" element={<Research />} />
-        <Route path="/dev-version/admission" element={<Admission />} />
-        <Route path="/dev-version/how-to-apply" element={<HowToApply />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/admission" element={<Admission />} />
+        <Route path="/how-to-apply" element={<HowToApply />} />
         <Route
-          path="/dev-version/international-students-and-visa-support"
+          path="/international-students-and-visa-support"
           element={<IntStuVisaSupport />}
         />
-        <Route path="/dev-version/tuition-fees" element={<TutionFees />} />
-        <Route path="/dev-version/access-and-participation" element={<AccessParticipation />} />
-        <Route path="/dev-version/student-protection" element={<StudentProtection />} />
-        <Route path="/dev-version/work-for-us" element={<WorkForUs />} />
+        <Route path="/tuition-fees" element={<TutionFees />} />
+        <Route path="/access-and-participation" element={<AccessParticipation />} />
+        <Route path="/student-protection" element={<StudentProtection />} />
+        <Route path="/work-for-us" element={<WorkForUs />} />
         <Route
-          path="/dev-version/partnership-opportunities"
+          path="/partnership-opportunities"
           element={<PartnershipOpportunities />}
         />
         {/* 404 Handling */}
-        {/* <Route path="/dev-version/404" element={<NotFoundPage />} />
-          <Route path="*" element={<Navigate to="/dev-version/404" replace />} /> */}
+        {/* <Route path="/404" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate to="/404" replace />} /> */}
       </Routes>
       {/* </ErrorBoundary> */}
     </Router>
