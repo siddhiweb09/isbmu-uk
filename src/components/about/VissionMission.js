@@ -57,7 +57,7 @@ const VissionMission = () => {
         <div class="container hero-content">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-              <h1 class="display-3 university-name">Our History</h1>
+              <h1 class="display-3 university-name">Our Vision, Mission and Values</h1>
               <p class="lead tagline">
                 Rooted in tradition, driven by innovation — our journey shapes
                 the future
@@ -116,7 +116,7 @@ const VissionMission = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="mission-section ptb-50">
+      <section className="mission-section pb-50">
         <div className="container">
           <Row>
             <Col lg={7} className="order-lg-2 mb-4 mb-lg-0">

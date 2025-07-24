@@ -27,7 +27,7 @@ const History = () => {
       <section className="ptb-50">
         <div className="container">
           <Row className="m-0">
-            <div className="col-md-6 mt-5 d-flex justify-content-center">
+            <div className="col-md-6 d-flex justify-content-end flex-column">
               <div className="image-wrapper position-relative">
                 <div className="image-bg h-75"></div>
                 <img
@@ -38,7 +38,7 @@ const History = () => {
               </div>
             </div>
             <Col lg={6}>
-              <h2 className="section-title-start modern-title">
+              <h2 className="section-title-start modern-title mt-lg-0 mt-4">
                 ISBM University's Legacy
               </h2>
               <p>
@@ -57,7 +57,7 @@ const History = () => {
         </div>
       </section>
 
-      <section className="ptb-50">
+      <section className="pb-50">
         <div className="container">
           <Row className="m-0 justify-content-between">
             <Col lg={6}>
@@ -80,7 +80,7 @@ const History = () => {
                 solve global challenges and shape the future.
               </p>
             </Col>
-            <div className="col-md-6 mt-5 d-flex justify-content-center">
+            <div className="col-md-6 d-flex justify-content-end flex-column">
               <div className="image-wrapper position-relative">
                 <div className="image-bg1 h-75"></div>
                 <img

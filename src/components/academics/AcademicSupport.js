@@ -13,7 +13,7 @@ import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
 import bannerImage from "../../Images/Banner/courseBanner.webp";
 import futureImage from "../../Images/Banner/vision-mission-banner.jpg";
-import academicstudent from "../../Images/academic/university-cap-throw-students.png";
+import academicstudent from "../../Images/academic/university-cap-throw-students.jpg";
 
 const AcademicSupport = () => {
   return (

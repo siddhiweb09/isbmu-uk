@@ -374,7 +374,7 @@ const Menubar = () => {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">
+                  <a href="/research" className="nav-link">
                     Research
                   </a>
                 </li>

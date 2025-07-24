@@ -4,7 +4,7 @@ import Footer from "../common/Footer";
 import { Row, Col } from "react-bootstrap";
 import bannerImage from "../../Images/Banner/courseBanner.webp";
 import { Link } from "react-router-dom";
-import academicstudent from "../../Images/academic/university-cap-throw-students.png";
+import academicstudent from "../../Images/academic/university-cap-throw-students.jpg";
 
 const AcademicPhilosophy = () => {
   return (
