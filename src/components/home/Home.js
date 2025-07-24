@@ -28,9 +28,9 @@ const Home = () => {
       {isMobile ? <BannerMob /> : <Banner />}
       <AboutSec />
       <Programs />
-      <InternationalPartnerships />
       <Placement />
-      <Recruiters />
+      <InternationalPartnerships />
+      {/* <Recruiters /> */}
       <Accred />
       <Footer />
       {/* 

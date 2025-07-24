@@ -1,5 +1,6 @@
 body {
-  font-family: "Archivo", sans-serif;
+  /* font-family: "Archivo", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
@@ -148,13 +149,13 @@ ul.menu_header li {
   gap: 0.5rem;
 }
 
-.menu_header>li {
+.menu_header > li {
   position: unset;
   cursor: pointer;
   align-self: center;
 }
 
-.menu_header>li>.nav-link {
+.menu_header > li > .nav-link {
   color: white !important;
   font-weight: 500;
   padding: 8px 0 !important;
@@ -162,7 +163,7 @@ ul.menu_header li {
   transition: all 0.3s ease;
 }
 
-.menu_header .dropdown-item>li>.nav-link:hover {
+.menu_header .dropdown-item > li > .nav-link:hover {
   color: #f8f9fa !important;
   background: #c5135d !important;
 }
@@ -313,7 +314,7 @@ ul.menu_header li {
   /* object-position: left; */
 }
 
-.abcd.desktop .slick-slide>div {
+.abcd.desktop .slick-slide > div {
   margin: 0;
 }
 
@@ -803,9 +804,11 @@ div#nav-tab {
 
 /* new css */
 .home-banner {
-  background-image: linear-gradient(45deg,
+  background-image: linear-gradient(
+      45deg,
       rgba(0, 0, 0, 0.75) 5%,
-      rgba(0, 0, 0, 0.75) 5%),
+      rgba(0, 0, 0, 0.75) 5%
+    ),
     url("../../Images/Banner/homeBanner.jpg");
 }
 
@@ -874,4 +877,3 @@ div#nav-tab {
 .banner-content h1 {
   color: #fff;
 }
-

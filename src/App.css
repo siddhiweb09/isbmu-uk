@@ -32,7 +32,8 @@
 }
 
 body {
-  font-family: "Archivo", sans-serif;
+  /* font-family: "Archivo", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -105,13 +106,13 @@ ul.menu_header li {
   gap: 0.5rem;
 }
 
-.menu_header>li {
+.menu_header > li {
   position: unset;
   cursor: pointer;
   align-self: center;
 }
 
-.menu_header>li>.nav-link {
+.menu_header > li > .nav-link {
   color: white !important;
   font-weight: 500;
   padding: 8px 0 !important;
@@ -119,7 +120,7 @@ ul.menu_header li {
   transition: all 0.3s ease;
 }
 
-.menu_header .dropdown-item>li>.nav-link:hover {
+.menu_header .dropdown-item > li > .nav-link:hover {
   color: #f8f9fa !important;
   background: var(--purple-color) !important;
 }
@@ -236,9 +237,12 @@ ul.menu_header li {
 }
 
 .home-banner {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(0, 0, 0, 0.7) 5%,
-      rgba(0, 0, 0, 0.7) 100%), url("Images/Banner/homeBanner.jpg");
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("Images/Banner/homeBanner.jpg");
 }
 
 .ptb-50 {
@@ -295,7 +299,6 @@ ul.menu_header li {
   transform: scale(1.02);
 }
 
-
 /* Programs Section */
 .programs-section {
   /* background-color: #F2F2F2; */
@@ -309,7 +312,7 @@ ul.menu_header li {
 }
 
 .programs-description {
-  color: #FFF;
+  color: #fff;
 }
 
 /* Arrow Container */
@@ -356,11 +359,9 @@ ul.menu_header li {
     margin-top: 1.5rem;
     display: inline-block;
   }
-
 }
 
 @media (max-width: 575.98px) {
-
   .programs-text-col {
     padding: 0 15px;
   }
@@ -399,7 +400,7 @@ ul.menu_header li {
 .logo-wrapper img {
   height: 120px;
   object-fit: contain;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   width: 100%;
 }
 
@@ -714,7 +715,14 @@ img.recognitionImg {
 
 /* Facebook */
 .social-icon:nth-child(2):hover .icon-bg {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
 }
 
 /* Instagram */
@@ -864,7 +872,7 @@ button.trigger_popup.broucher {
 }
 
 .footer-heading:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -938,7 +946,6 @@ button.trigger_popup.broucher {
 }
 
 @media (max-width: 998px) {
-
   .image-bg,
   .image-bg1 {
     display: none;
@@ -946,7 +953,7 @@ button.trigger_popup.broucher {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 40%;
   height: 4px;
@@ -955,7 +962,7 @@ button.trigger_popup.broucher {
 }
 
 .section-title-start::after {
-  content: '';
+  content: "";
   display: block;
   width: 40%;
   height: 4px;
@@ -965,7 +972,8 @@ button.trigger_popup.broucher {
 
 /* About Us */
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/Banner/aboutBanner.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("Images/Banner/aboutBanner.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -1037,7 +1045,7 @@ button.trigger_popup.broucher {
   font-size: 2.5rem;
   color: var(--golden-color);
   width: fit-content;
-  background: #FFF;
+  background: #fff;
   margin: 0 auto 10px;
   border-radius: 50%;
   padding: 10px 20px;
@@ -1045,7 +1053,11 @@ button.trigger_popup.broucher {
 
 .cta-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--accent-color) 100%
+  );
   color: white;
   text-align: center;
 }
@@ -1106,7 +1118,7 @@ button.trigger_popup.broucher {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  background: linear-gradient(90deg, #ff9933 0%, #ffffff 50%, #138808 100%);
 }
 
 .bridge-icon {
@@ -1118,7 +1130,7 @@ button.trigger_popup.broucher {
 
 .india-flag {
   left: 20%;
-  color: #FF9933;
+  color: #ff9933;
 }
 
 .uk-flag {
@@ -1191,15 +1203,15 @@ button.trigger_popup.broucher {
 .value-card:hover {
   transform: translateY(-5px);
   background: var(--blue-color);
-  color: #FFF;
+  color: #fff;
 }
 
 .value-card:hover .card-title {
-  color: #FFF;
+  color: #fff;
 }
 
 .value-card:hover span {
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
 }
 
 p.fst-italic {
