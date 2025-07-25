@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
-import bannerImage from "../../Images/Banner/vision-mission-banner.jpg";
+import bannerImage from "../../Images/Banner/policies-banner.jpg";
 
 const Policies = () => {
   const policyLinks = [
@@ -53,7 +53,7 @@ const Policies = () => {
         <div className="container">
           <Row className="justify-content-center mb-5">
             <Col lg={10}>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow">
                 <Card.Body className="p-4 p-lg-5">
                   <p>
                     We are committed to transparency, integrity, and excellence
@@ -99,7 +99,7 @@ const Policies = () => {
               <p className="text-center mb-5">
                 You can explore our core policies using the links below:
               </p>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow">
                 <Card.Body className="p-0">
                   <ListGroup variant="flush">
                     {policyLinks.map((policy, index) => (

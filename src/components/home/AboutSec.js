@@ -3,7 +3,7 @@ import React from "react";
 import AACSBLogo from "../../Images/accrediations/aacsb.png";
 import NaacLogo from "../../Images/accrediations/Naac.jpg";
 import IAOULogo from "../../Images/accrediations/iaou.png";
-import unImage from "../../Images/home/unimage.jpg";
+import unImage from "../../Images/home/unhome1.jpg";
 import unStudentImage from "../../Images/home/unstudent.jpg";
 
 const AboutSec = () => {

@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
-import bannerImage from "../../Images/Banner/courseBanner.webp";
+import bannerImage from "../../Images/Banner/tution-fees.jpg";
 import applyImage from "../../Images/Banner/courseBanner.webp";
 
 const TutionFees = () => {

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
-import bannerImage from "../../Images/Banner/courseBanner.webp";
+import bannerImage from "../../Images/Banner/academic-support.jpg";
 import futureImage from "../../Images/Banner/vision-mission-banner.jpg";
 import academicstudent from "../../Images/academic/university-cap-throw-students.jpg";
 
@@ -43,15 +43,15 @@ const AcademicSupport = () => {
       <section className="ptb-50">
         <Container>
           <div className="p-4 p-md-5 bg-white rounded shadow-sm">
-            <h2 className="modern-title section-title text-blue text-center">
+            {/* <h2 className="modern-title section-title text-blue text-center">
               Learning Support
-            </h2>
-            <p>
-              Our strong links with UK employers, professional bodies, and
-              industry partners mean that students gain valuable exposure to
-              real-world scenarios, guest lectures, work placements, and live
-              projects. We work actively to ensure our graduates are work-ready,
-              globally minded, and highly employable.
+            </h2> */}
+            <p className="lead">
+              “We are committed to student success. That’s why we offer a
+              comprehensive range of academic support services, including study
+              skill workshops, perosnal tutors, learning development resources,
+              and one-to-one acadmeic gudiance. Our goal is to empower every
+              student to reach their full acadmeic potential”
             </p>
           </div>
         </Container>

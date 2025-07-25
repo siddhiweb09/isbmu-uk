@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
-import bannerImage from "../../Images/Banner/courseBanner.webp";
+import bannerImage from "../../Images/Banner/access-participation.webp";
 import applyImage from "../../Images/Banner/courseBanner.webp";
 
 const AccessParticipation = () => {

@@ -7,6 +7,7 @@ import InternationalPartnerships from "./InternationalPartnerships";
 import Placement from "./Placement";
 import Recruiters from "./Recruiters";
 import Accred from "./Accred";
+import Enrollment from "./Enrollment";
 import Footer from "../common/Footer";
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
       {isMobile ? <BannerMob /> : <Banner />}
       <AboutSec />
       <Programs />
+      <Enrollment />
       <Placement />
       <InternationalPartnerships />
       {/* <Recruiters /> */}

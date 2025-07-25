@@ -25,12 +25,12 @@ const Accred = () => {
                 Enroll now to earn your degree from a highly recognized
                 university.
               </p>
-              <Button
+              {/* <Button
                 className="btn-download btn bg-blue border-0"
                 onClick={() => setModalShow(true)}
               >
                 Apply Now
-              </Button>
+              </Button> */}
             </div>
           </div>
         </Col>

@@ -12,7 +12,10 @@ import { Link } from "react-router-dom";
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
 import bannerImage from "../../Images/Banner/courseBanner.webp";
-import courseImage from "../../Images/Banner/vision-mission-banner.jpg";
+import courseImage1 from "../../Images/academic/mba-banner.jpg";
+import courseImage2 from "../../Images/academic/diploma-strategic-management-banner.jpg";
+import courseImage3 from "../../Images/academic/it-programe-banner.jpg";
+import courseImage4 from "../../Images/academic/mba-2-banner.jpg";
 
 const Courses = () => {
   return (
@@ -27,7 +30,7 @@ const Courses = () => {
         <div class="container hero-content">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-              <h1 class="display-3 university-name">Courses Offered</h1>
+              <h1 class="display-3 university-name">Programmes Offered</h1>
               <p class="lead tagline">
                 World-class education bridging Indian academic excellence with
                 UK innovation
@@ -83,7 +86,7 @@ const Courses = () => {
           <Row className="justify-content-center">
             <Col lg={12}>
               <h3 className="text-center modern-title section-title text-blue">
-                Explore Our Courses
+                Explore Our Programmes
               </h3>
               <div
                 id="featured-course"
@@ -94,7 +97,7 @@ const Courses = () => {
                 <Row className="g-0 shadow-lg my-5">
                   <Col md={5} className="d-flex p-0">
                     <img
-                      src={courseImage}
+                      src={courseImage1}
                       alt="MBA Programme"
                       className="img-fluid h-100"
                       style={{
@@ -200,7 +203,7 @@ const Courses = () => {
                   </Col>
                   <Col md={5} className="d-flex p-0">
                     <img
-                      src={courseImage}
+                      src={courseImage2}
                       alt="Postgraduate Diploma"
                       className="img-fluid h-100"
                       style={{
@@ -217,7 +220,7 @@ const Courses = () => {
                 <Row className="g-0 shadow-lg mb-5">
                   <Col md={5} className="d-flex p-0">
                     <img
-                      src={courseImage}
+                      src={courseImage3}
                       alt="Computing and IT"
                       className="img-fluid h-100"
                       style={{
@@ -279,7 +282,7 @@ const Courses = () => {
                   </Col>
                   <Col md={5} className="d-flex p-0">
                     <img
-                      src={courseImage}
+                      src={courseImage4}
                       alt="Business and Management"
                       className="img-fluid h-100"
                       style={{

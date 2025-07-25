@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
-import bannerImage from "../../Images/Banner/courseBanner.webp";
-import onlineLearningImage from "../../Images/Banner/vision-mission-banner.jpg";
+import bannerImage from "../../Images/Banner/online-study-banner.jpg";
+import onlineLearningImage from "../../Images/commonimg/online-study-image1.jpg";
 
 const OnlineEducation = () => {
   return (
@@ -115,7 +115,7 @@ const OnlineEducation = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="ptb-50 bg-purple">
+      {/* <section className="ptb-50 bg-purple">
         <div className="container-xxl">
           <Row className="justify-content-center text-center">
             <Col lg={8}>
@@ -131,7 +131,7 @@ const OnlineEducation = () => {
             </Col>
           </Row>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </React.Fragment>

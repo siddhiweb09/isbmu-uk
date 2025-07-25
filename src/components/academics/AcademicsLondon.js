@@ -2,9 +2,9 @@ import React from "react";
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
 import { Row, Col } from "react-bootstrap";
-import bannerImage from "../../Images/Banner/courseBanner.webp";
+import bannerImage from "../../Images/academic/academic-london-banner.jpg";
 import { Link } from "react-router-dom";
-import academicstudent from "../../Images/academic/university-cap-throw-students.jpg";
+import academicstudent from "../../Images/academic/academic-london.jpg";
 
 const AcademicsLondon = () => {
   return (

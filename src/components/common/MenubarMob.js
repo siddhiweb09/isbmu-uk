@@ -91,7 +91,7 @@ const MenubarMob = () => {
       { label: "Policies", link: "/policies" },
     ],
     Academics: [
-      { label: "Courses", link: "/courses" },
+      { label: "Programmes", link: "/our-programmes" },
       { label: "Online Education", link: "/online-education" },
       { label: "Looking Ahead", link: "/looking-ahead" },
       { label: "Academic Philosophy", link: "/academic-philosophy" },

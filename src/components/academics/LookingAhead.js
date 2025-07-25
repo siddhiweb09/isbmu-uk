@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 import Topnav from "../common/Topnav";
 import Footer from "../common/Footer";
-import bannerImage from "../../Images/Banner/courseBanner.webp";
+import bannerImage from "../../Images/Banner/looking-ahead-banner.jpg";
 import onlineLearningImage from "../../Images/academic/ISBM_PRO.webp";
 
 const LookingAhead = () => {

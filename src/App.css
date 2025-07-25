@@ -56,14 +56,13 @@ body {
   text-align: center;
   font-family: "Merriweather", serif;
   line-height: 90px;
-  color: #FFF;
+  color: #fff;
   word-spacing: 15px;
   letter-spacing: 3px;
 }
 
-
 .banner-content h6 {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   margin-bottom: 2rem;
 }
@@ -150,11 +149,11 @@ ul.menu_header li {
   background: var(--purple-color) !important;
 }
 
-.menubar .dropdown-menu {
+/* .menubar .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 47vw;
+  width: 25vw;
   min-height: fit-content;
   height: fit-content;
   max-height: 40vh;
@@ -169,6 +168,29 @@ ul.menu_header li {
   display: flex !important;
   flex-wrap: wrap;
   font-size: 0.85rem;
+} */
+
+.menubar .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: auto;
+  width: 25vw;
+  visibility: hidden;
+  opacity: 0;
+  background: linear-gradient(to right, rgba(28, 36, 71, 0.9));
+  color: #fff !important;
+}
+
+.menubar .student-life-menu{
+  right: 15px !important;
+}
+
+.menubar .contact-us-menu{
+  right: 0px !important;
+}
+
+.menubar .about-us-menu{
+  left: 0px !important;
 }
 
 .menubar .dropdown-menu a {
@@ -184,7 +206,7 @@ ul.menu_header li {
 .dropdown-item {
   color: #fff !important;
   padding: 8px 20px !important;
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
   /* width: 33%; */
   text-wrap: auto;
 }
@@ -225,7 +247,7 @@ ul.menu_header li {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.835rem !important;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 .upper-menu a:hover {
@@ -435,7 +457,7 @@ ul.menu_header li {
   width: 40%;
   height: 100%;
   background: var(--purple-color) !important;
-  z-index: 0;
+  z-index: -1;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -465,7 +487,7 @@ ul.menu_header li {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -1259,11 +1281,11 @@ img.service-img {
 
 .travel-ops .nav-link {
   color: #fff !important;
-  border-bottom: 2px solid #FFF;
+  border-bottom: 2px solid #fff;
 }
 
 .travel-ops .nav-link.active {
-  background: #FFF !important;
+  background: #fff !important;
   color: var(--purple-color) !important;
   font-weight: 600;
   font-size: 1.1rem !important;
@@ -1286,4 +1308,71 @@ img.service-img {
 .contact-box {
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trigger_popup {
+  transform: rotate(270deg);
+  position: fixed;
+  top: 350px;
+  right: -43px;
+  font-weight: 600;
+  z-index: 999;
+  cursor: pointer;
+  background-color: #c5135d;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.trigger_popup:hover {
+  background-color: #f09433;
+  color: #000;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 767px) {
+  .trigger_popup {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+.modal-content {
+  border-radius: "2rem";
+}
+
+.modal-header {
+  border-bottom-color: #fff !important;
+  padding-bottom: 0 !important;
+}
+
+.enquirymodalheading {
+  font-size: xx-large;
+  color: #06355f;
+  font-weight: 600;
+  text-align: start;
+}
+
+.enquirymodalheading2 {
+  /* font-size: 18px; */
+  color: #06355f;
+}
+
+/* .enquiryform {
+  padding: 0rem 2rem;
+} */
+
+.form-control2 {
+  /* padding: 0.6rem 0.85rem !important; */
+  border-radius: 1rem !important;
+}
+
+.enquirybutton {
+  width: 100%;
+  background-color: #ab6396 !important;
+  border-radius: 1rem !important;
 }

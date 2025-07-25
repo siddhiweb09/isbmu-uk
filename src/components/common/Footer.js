@@ -36,6 +36,14 @@ const Footer = () => {
 
   return (
     <>
+      {/* <button
+        onClick={() => setModalShow(true)}
+        className="trigger_popup border-0"
+      >
+        <span>Enquire Now</span>
+      </button> */}
+   
+      {/* <EnquiryNow show={modalShow} onHide={() => setModalShow(false)} /> */}
       <div className="footer-section bg-blue text-white ptb-50">
         <div className="container">
           <Row className="flex-wrap-reverse m-0">
@@ -47,7 +55,7 @@ const Footer = () => {
                   <Link to="/about-us">About us </Link>
                 </li>
                 <li>
-                  <Link to="/vision-mission">Vision Mission</Link>
+                  <Link to="/mission-vision-values">Vision Mission</Link>
                 </li>
                 <li>
                   <Link to="/governing-board">Governing Board</Link>
@@ -76,13 +84,17 @@ const Footer = () => {
                   <Link to="/how-to-apply">How to Apply</Link>
                 </li>
                 <li>
-                  <Link to="/international-students-and-visa-support">International Students</Link>
+                  <Link to="/international-students-and-visa-support">
+                    International Students
+                  </Link>
                 </li>
                 <li>
                   <Link to="/tuition-fees">Tution Fees</Link>
                 </li>
                 <li>
-                  <Link to="/access-and-participation">Access and Participations</Link>
+                  <Link to="/access-and-participation">
+                    Access and Participations
+                  </Link>
                 </li>
                 <li>
                   <Link to="/student-protection">Student Protection</Link>
@@ -94,13 +106,13 @@ const Footer = () => {
               <h4 className="footer-heading mt-4">Contact Us</h4>
               <ul className="footer-links">
                 <li>
-                  <Link to="/">How to Find Us</Link>
+                  <Link to="/how-to-find-us">How to Find Us</Link>
                 </li>
                 <li>
-                  <Link to="/">Partnership Opportunities</Link>
+                  <Link to="/partnership-opportunities">Partnership Opportunities</Link>
                 </li>
                 <li>
-                  <Link to="/">Work For Us</Link>
+                  <Link to="/work-for-us">Work For Us</Link>
                 </li>
               </ul>
             </Col>
@@ -116,11 +128,13 @@ const Footer = () => {
               </div>
 
               <div className="footer-address">
-                United Kingdom:
-                <br />
                 Sceptre House, 75-81 Staines Road
                 <br />
-                Hounslow,London,W5 2UA, UK
+                Hounslow,London
+                <br />
+                TW3 3HW
+                <br />
+                United Kingdom
               </div>
 
               {/* <div className="footer-map">

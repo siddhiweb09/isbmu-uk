@@ -42,10 +42,12 @@ const Research = () => {
             <Col lg={12}>
               <Card className="border-0 shadow-sm">
                 <Card.Body className="p-4 p-md-5">
-                  <h2 className="section-title-start modern-title">
-                    Driving Impact Through Inclusive and Global Education
-                    Research
+                  <h2 className="section-title modern-title text-center">
+                    Inclusive Learning Research
+                  
                   </h2>
+                  <p className="lead fs-4 fw-bold mb-4">  Driving Impact Through Inclusive and Global Education
+                    Research</p>
                   <p>
                     At the heart of our research mission is a commitment to
                     advancing equity, inclusion, and global collaboration in

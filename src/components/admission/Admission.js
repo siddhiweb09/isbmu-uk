@@ -71,12 +71,12 @@ const Admission = () => {
           <Row className="justify-content-center text-center">
             <Col lg={8}>
               <h2 className="fw-bold mb-4">Ready to Begin Your Journey?</h2>
-              <Link to="/apply" className="btn btn-light btn-lg px-4 me-2">
+              {/* <Link to="/apply" className="btn btn-light btn-lg px-4 me-2">
                 Apply Now
               </Link>
               <Link to="/contact" className="btn btn-outline-light btn-lg px-4">
                 Contact Us
-              </Link>
+              </Link> */}
             </Col>
           </Row>
         </div>

@@ -2,13 +2,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import React from "react";
 import { Carousel } from "react-bootstrap";
 
-import placementuser_1 from "../../Images/placement/placement1.jpeg";
-import placementuser_2 from "../../Images/placement/placement2.jpg";
-import placementuser_3 from "../../Images/placement/placement3.jpg";
-import placementuser_4 from "../../Images/placement/placement4.jpg";
-import placementuser_5 from "../../Images/placement/placement5.jpg";
-import placementuser_6 from "../../Images/placement/placement6.jpg";
-import placementuser_7 from "../../Images/placement/placement7.jpg";
+import placementuser_1 from "../../Images/home/place1home.jpg";
+import placementuser_2 from "../../Images/home/place2home.jpg";
+import placementuser_3 from "../../Images/home/place3home.jpg";
+import placementuser_4 from "../../Images/home/place4home.jpg";
+// import placementuser_5 from "../../Images/placement/placement5.jpg";
+// import placementuser_6 from "../../Images/placement/placement6.jpg";
+// import placementuser_7 from "../../Images/placement/placement7.jpg";
 
 const Placement = () => {
   const sliderSettings = {
@@ -36,7 +36,7 @@ const Placement = () => {
         </Row>
 
         <Row className="placement-content justify-content-between">
-          <Col lg={6} className="stats-container">
+          <Col lg={4} className="stats-container">
             <div className="stats-grid">
               {placementStats.map((stat, index) => (
                 <div
@@ -57,7 +57,13 @@ const Placement = () => {
               ))}
             </div>
           </Col>
-          <Col lg={5} className="placement-container">
+          <Col lg={3} className="bg-blue mt-4">
+            <div className="p-5">
+              <h2 className="text-white fw-bold">Recognised qualifications</h2>
+              <p className="text-white">From ISBM University Uk London and our esteemed educational partners.</p>
+            </div>
+          </Col>
+          <Col lg={4} className="placement-container">
             <Carousel>
               <Carousel.Item interval={3000} data-pause="true">
                 <div className="placement-img-container ">
@@ -95,7 +101,7 @@ const Placement = () => {
                   />
                 </div>
               </Carousel.Item>
-              <Carousel.Item interval={3000} data-pause="true">
+              {/* <Carousel.Item interval={3000} data-pause="true">
                 <div className="placement-img-container">
                   <img
                     className="d-block w-100 placement-img"
@@ -121,7 +127,7 @@ const Placement = () => {
                     alt="The Best in Campus Facilities and Resources"
                   />
                 </div>
-              </Carousel.Item>
+              </Carousel.Item> */}
             </Carousel>
           </Col>
         </Row>
@@ -132,12 +138,12 @@ const Placement = () => {
 
 // Placement stats data
 const placementStats = [
-  { value: "6500", unit: "+", label: "Placements" },
-  { value: "70", unit: "LPA", label: "Highest offer" },
-  { value: "25", unit: "LPA", label: "Average offer" },
-  { value: "250", unit: "+", label: "Companies hired students" },
-  { value: "150", unit: "+", label: "Companies Visited" },
-  { value: "95", unit: "%", label: "Students Placed" },
+  { value: "50000", unit: "+", label: "Students" },
+  { value: "32", unit: "", label: "Years of ISBM" },
+  { value: "500", unit: "+", label: "Staff at ISBM" },
+  // { value: "250", unit: "+", label: "Companies hired students" },
+  // { value: "150", unit: "+", label: "Companies Visited" },
+  { value: "98", unit: "%", label: "Success Rate" },
 ];
 
 // const placementStats = [
