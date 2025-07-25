@@ -322,9 +322,11 @@ const HowToFindUs = () => {
                   <address className="mb-0">
                     Sceptre House, 75-81 Staines Road
                     <br />
-                    Hounslow, London
+                    Hounslow,London
                     <br />
-                    W5 2UA, UK
+                    TW3 3HW
+                    <br />
+                    United Kingdom
                   </address>
                 </Card.Body>
               </Card>
@@ -344,6 +346,8 @@ const HowToFindUs = () => {
                     <br />
                     India
                   </address>
+                  <p className="mt-2"><span className="fw-bold">Email:</span>
+                    <br />enquiry@isbmuniversity.edu.in</p>
                 </Card.Body>
               </Card>
             </Col>

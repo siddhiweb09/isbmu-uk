@@ -13,7 +13,7 @@ const EnrollmentSection = () => {
         <Row className="m-0">
           <Col md={6} className="py-2">
             <div>
-              <h3 className="modern-title text-white section-title-start">Enrolment 2025/2026</h3>
+              <h3 className="modern-title text-white section-title-start">Enrolment 2025-2026</h3>
               <p className="text-white">
                 The start of main enrolment for the academic year 2025/26 will
                 be in August.

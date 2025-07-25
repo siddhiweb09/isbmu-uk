@@ -28,7 +28,7 @@ const TutionFees = () => {
         <div class="container hero-content">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-              <h1 class="display-3 university-name">Student Fees</h1>
+              <h1 class="display-3 university-name">Tution Fees</h1>
               <p class="lead tagline">
                 {" "}
                 Transparent and competitive tuition fees
